@@ -1,0 +1,33 @@
+{
+    "name": "harry",
+    "score": 11.75,
+    "isAdmi": false,
+    "licences": null,
+    "shopItem":["food","clothes","sunflowr oil"],
+    "myobj":{
+        "name":"nested",
+        "marks":45
+    }
+
+}
+
+
+myjson=`{
+    "name": "harry",
+    "score": 11.75,
+    "isAdmi": false,
+    "licences": null,
+    "shopItem":["food","clothes","sunflowr oil"],
+    "myobj":{
+        "name":"nested",
+        "marks":45
+    }
+
+}`
+'{\n    "name": "harry",\n    "score": 11.75,\n    "isAdmi": false,\n    "licences": null,\n    "shopItem":["food","clothes","sunflowr oil"],\n    "myobj":{\n        "name":"nested",\n        "marks":45\n    }\n\n}'
+JSON.parse(myjson);
+{name: 'harry', score: 11.75, isAdmi: false, licences: null, shopItem: Array(3), …}isAdmi: falselicences: nullmyobj: {name: 'nested', marks: 45}marks: 45name: "nested"[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()name: "harry"score: 11.75shopItem: (3) ['food', 'clothes', 'sunflowr oil'][[Prototype]]: Object
+detail = JSON.parse(myjson);
+{name: 'harry', score: 11.75, isAdmi: false, licences: null, shopItem: Array(3), …}
+detail['isAdmi']
+false
